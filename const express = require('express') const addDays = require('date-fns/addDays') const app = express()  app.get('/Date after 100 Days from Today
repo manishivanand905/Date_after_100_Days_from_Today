@@ -6,10 +6,10 @@ app.get('/', (request, response) => {
   const dateTime = new Date()
   const date = addDays(
     new Date(dateTime.getFullYear(), dateTime.getMonth(), dateTime.getDate()),
-    100,
+    100
   )
   response.send(
-    `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`,
+    `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`
   )
 })
 
